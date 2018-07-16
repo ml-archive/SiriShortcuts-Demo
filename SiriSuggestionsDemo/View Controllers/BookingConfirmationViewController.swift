@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DonatedShortcutViewController.swift
 //  SiriSuggestionsDemo
 //
 //  Created by Andrei Hogea on 11/07/2018.
@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import Intents
 
-class ViewController: UIViewController {
-
+class DonatedShortcutViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print("shortcut view")
     }
-
-
+    
 }
-
