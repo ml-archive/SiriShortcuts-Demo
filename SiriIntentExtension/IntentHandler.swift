@@ -19,12 +19,4 @@ import Intents
 
 class IntentHandler: INExtension {
     
-    override func handler(for intent: INIntent) -> Any {
-        guard intent is TestDriveIntent else {
-            fatalError("Intent type not recognised \(intent)")
-        }
-        
-        return TestDriveIntentHandler()
-    }
-    
 }

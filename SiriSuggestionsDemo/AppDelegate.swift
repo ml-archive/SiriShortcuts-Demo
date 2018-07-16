@@ -46,36 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-       print(userActivity)
-        if let intent = userActivity.interaction?.intent as? TestDriveIntent {
-            //handle intent
-            handle(intent)
-            return true
-        } else if userActivity.activityType == NSUserActivity.ActivityTypes.catalog {
-            //handle activity
-            return true
-        }
         return false
     }
     
-    private func handle(_ intent: TestDriveIntent) {
-        let handler = TestDriveIntentHandler()
-        handler.handle(intent: intent) { (response) in
-
-            if response.code != .success {
-                print("failed handling intent")
-            } else {
-                guard let window = self.window,
-                    let rootViewController = window.rootViewController as? UINavigationController,
-                    let vc = rootViewController.viewControllers.first as? ViewController else {
-                        return
-                }
-                let storyboard = UIStoryboard(name: "Main", bundle: .main)
-                let confirmationVC = storyboard.instantiateViewController(withIdentifier: "BookingConfirmationViewController") as! BookingConfirmationViewController
-                confirmationVC.testDrive = TestDrive(from: intent)
-                vc.navigationController?.pushViewController(confirmationVC, animated: true)
-            }
-        }
-    }
 }
 

@@ -12,7 +12,6 @@ import CoreSpotlight
 
 class ViewController: UIViewController {
     
-    private lazy var voiceShortcutManager = VoiceShortcutsManager.init()
     private var cars: [Car] = DataManager.shared.getCarsInCatalog()
 
     @IBOutlet weak var tableView: UITableView! {
@@ -34,23 +33,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Catalog"
-        
-        makeCatalogActivity()
-        requestSiriAuthorization()
-    }
-
-    //if user hasn't already allowed Siri permisions, we request the user to authorize Siri
-    private func requestSiriAuthorization() {
-        guard INPreferences.siriAuthorizationStatus() != .authorized else { return }
-                
-        INPreferences.requestSiriAuthorization { (status) in
-            switch status {
-            case .authorized, .notDetermined, .restricted:
-                self.makeCatalogActivity()
-            case .denied:
-                self.allowSiriAlert()
-            }
-        }
     }
     
     private func allowSiriAlert() {
@@ -73,19 +55,7 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-
-    // MARK: - Donate Activity
     
-    private func makeCatalogActivity() {
-        userActivity = NSUserActivity.catalogActivity
-    }
-    
-    // MARK: - Update Voice Shortcuts
-    
-    func updateVoiceShortcuts() {
-        voiceShortcutManager.updateVoiceShortcuts(completion: nil)
-        dismiss(animated: true, completion: nil)
-    }
 }
 
 // MARK: - UITableViewDataSource
@@ -113,60 +83,6 @@ extension ViewController: UITableViewDelegate {
         
         let testDrive = TestDriveManager.shared.bookTestDrive(car, duration: 60)
         
-        //is action already has a shortcut, update shortcut else create shortcut
-        if let shortcut = voiceShortcutManager.voiceShortcut(for: testDrive) {
-            let editVoiceShortcutViewController = INUIEditVoiceShortcutViewController(voiceShortcut: shortcut)
-            editVoiceShortcutViewController.delegate = self
-            present(editVoiceShortcutViewController, animated: true, completion: nil)
-        } else if let shortcut = INShortcut(intent: testDrive.intent) {
-            print(shortcut)
-            let addVoiceShortcutVC = INUIAddVoiceShortcutViewController(shortcut: shortcut)
-            addVoiceShortcutVC.delegate = self
-            present(addVoiceShortcutVC, animated: true, completion: nil)
-        }
         
-    }
-}
-
-// MARK: - INUIAddVoiceShortcutViewControllerDelegate
-
-extension ViewController: INUIAddVoiceShortcutViewControllerDelegate {
-    
-    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController,
-                                        didFinishWith voiceShortcut: INVoiceShortcut?,
-                                        error: Error?) {
-        if let error = error {
-            print("error adding voice shortcut:\(error.localizedDescription)")
-            return
-        }
-        updateVoiceShortcuts()
-    }
-    
-    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
-        dismiss(animated: true, completion: nil)
-    }
-}
-
-// MARK: - INUIEditVoiceShortcutViewControllerDelegate
-
-extension ViewController: INUIEditVoiceShortcutViewControllerDelegate {
-    
-    func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewController,
-                                         didUpdate voiceShortcut: INVoiceShortcut?,
-                                         error: Error?) {
-        if let error = error {
-            print("error adding voice shortcut:\(error.localizedDescription)")
-            return
-        }
-        updateVoiceShortcuts()
-    }
-    
-    func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewController,
-                                         didDeleteVoiceShortcutWithIdentifier deletedVoiceShortcutIdentifier: UUID) {
-        updateVoiceShortcuts()
-    }
-    
-    func editVoiceShortcutViewControllerDidCancel(_ controller: INUIEditVoiceShortcutViewController) {
-        dismiss(animated: true, completion: nil)
     }
 }
