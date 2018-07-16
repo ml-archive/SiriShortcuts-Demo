@@ -10,7 +10,7 @@ import UIKit
 import IntentsUI
 import CoreSpotlight
 
-class ViewController: UIViewController {
+class CatalogViewController: UIViewController {
     
     private lazy var voiceShortcutManager = VoiceShortcutsManager.init()
     private var cars: [Car] = DataManager.shared.getCarsInCatalog()
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 
-extension ViewController: UITableViewDataSource {
+extension CatalogViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cars.count
     }
@@ -105,7 +105,7 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 
-extension ViewController: UITableViewDelegate {
+extension CatalogViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
@@ -119,7 +119,6 @@ extension ViewController: UITableViewDelegate {
             editVoiceShortcutViewController.delegate = self
             present(editVoiceShortcutViewController, animated: true, completion: nil)
         } else if let shortcut = INShortcut(intent: testDrive.intent) {
-            print(shortcut)
             let addVoiceShortcutVC = INUIAddVoiceShortcutViewController(shortcut: shortcut)
             addVoiceShortcutVC.delegate = self
             present(addVoiceShortcutVC, animated: true, completion: nil)
@@ -130,7 +129,7 @@ extension ViewController: UITableViewDelegate {
 
 // MARK: - INUIAddVoiceShortcutViewControllerDelegate
 
-extension ViewController: INUIAddVoiceShortcutViewControllerDelegate {
+extension CatalogViewController: INUIAddVoiceShortcutViewControllerDelegate {
     
     func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController,
                                         didFinishWith voiceShortcut: INVoiceShortcut?,
@@ -149,7 +148,7 @@ extension ViewController: INUIAddVoiceShortcutViewControllerDelegate {
 
 // MARK: - INUIEditVoiceShortcutViewControllerDelegate
 
-extension ViewController: INUIEditVoiceShortcutViewControllerDelegate {
+extension CatalogViewController: INUIEditVoiceShortcutViewControllerDelegate {
     
     func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewController,
                                          didUpdate voiceShortcut: INVoiceShortcut?,

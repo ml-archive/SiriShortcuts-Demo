@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else {
                 guard let window = self.window,
                     let rootViewController = window.rootViewController as? UINavigationController,
-                    let vc = rootViewController.viewControllers.first as? ViewController else {
+                    let vc = rootViewController.viewControllers.first as? CatalogViewController else {
                         return
                 }
                 let storyboard = UIStoryboard(name: "Main", bundle: .main)
