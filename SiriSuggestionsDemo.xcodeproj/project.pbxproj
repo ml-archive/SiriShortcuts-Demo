@@ -19,7 +19,7 @@
 		42959D3120F77E9500101196 /* TestDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D720F75501007137CE /* TestDriveManager.swift */; };
 		42959D3220F77F0900101196 /* TestDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D720F75501007137CE /* TestDriveManager.swift */; };
 		42D03E4820F632300018CA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E4720F632300018CA3A /* AppDelegate.swift */; };
-		42D03E4A20F632300018CA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E4920F632300018CA3A /* ViewController.swift */; };
+		42D03E4A20F632300018CA3A /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E4920F632300018CA3A /* CatalogViewController.swift */; };
 		42D03E4D20F632300018CA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E4B20F632300018CA3A /* Main.storyboard */; };
 		42D03E4F20F632310018CA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E4E20F632310018CA3A /* Assets.xcassets */; };
 		42D03E5220F632310018CA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E5020F632310018CA3A /* LaunchScreen.storyboard */; };
@@ -76,7 +76,7 @@
 		42959D2520F776C900101196 /* TestDriveBookingCompleted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveBookingCompleted.swift; sourceTree = "<group>"; };
 		42D03E4420F632300018CA3A /* SiriSuggestionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriSuggestionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D03E4720F632300018CA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42D03E4920F632300018CA3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42D03E4920F632300018CA3A /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		42D03E4C20F632300018CA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D03E4E20F632310018CA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D03E5120F632310018CA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 		42EEF0E120F76330007137CE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				42D03E4920F632300018CA3A /* ViewController.swift */,
+				42D03E4920F632300018CA3A /* CatalogViewController.swift */,
 				42D03E7F20F643790018CA3A /* BookingConfirmationViewController.swift */,
 			);
 			path = "View Controllers";
@@ -392,7 +392,7 @@
 			files = (
 				42EEF0D820F75501007137CE /* TestDriveManager.swift in Sources */,
 				42D03E8020F643790018CA3A /* BookingConfirmationViewController.swift in Sources */,
-				42D03E4A20F632300018CA3A /* ViewController.swift in Sources */,
+				42D03E4A20F632300018CA3A /* CatalogViewController.swift in Sources */,
 				42EEF0D420F74F24007137CE /* Car.swift in Sources */,
 				42EEF0DA20F756C5007137CE /* CarCell.swift in Sources */,
 				42EEF0E420F763DF007137CE /* DataManager.swift in Sources */,

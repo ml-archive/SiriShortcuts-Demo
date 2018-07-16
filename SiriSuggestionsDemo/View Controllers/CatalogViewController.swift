@@ -10,7 +10,7 @@ import UIKit
 import IntentsUI
 import CoreSpotlight
 
-class ViewController: UIViewController {
+class CatalogViewController: UIViewController {
     
     private var cars: [Car] = DataManager.shared.getCarsInCatalog()
 
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 
-extension ViewController: UITableViewDataSource {
+extension CatalogViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cars.count
     }
@@ -75,7 +75,7 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 
-extension ViewController: UITableViewDelegate {
+extension CatalogViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
