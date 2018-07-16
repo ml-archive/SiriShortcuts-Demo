@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +12,7 @@
         <!--Intent View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="SiriIntentExtensionUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,8 +21,89 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="completedView" destination="CSd-2F-7q5" id="BTO-ua-zsx"/>
+                        <outlet property="overviewView" destination="H41-tV-PEu" id="zVu-9Y-bKy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="H41-tV-PEu" customClass="TestDriveOverview" customModule="SiriIntentExtensionUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9Hd-gH-5X7">
+                            <rect key="frame" x="12" y="12" width="216" height="104"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESS-zB-RoN">
+                                    <rect key="frame" x="0.0" y="0.0" width="216" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMX-WB-8Vo">
+                                    <rect key="frame" x="0.0" y="58" width="216" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9Hd-gH-5X7" firstAttribute="top" secondItem="H41-tV-PEu" secondAttribute="top" constant="12" id="75B-5z-YUF"/>
+                        <constraint firstItem="bBl-xM-DcV" firstAttribute="trailing" secondItem="9Hd-gH-5X7" secondAttribute="trailing" constant="12" id="b3v-Tj-dLi"/>
+                        <constraint firstAttribute="bottom" secondItem="9Hd-gH-5X7" secondAttribute="bottom" constant="12" id="iM4-YF-eF8"/>
+                        <constraint firstItem="9Hd-gH-5X7" firstAttribute="leading" secondItem="bBl-xM-DcV" secondAttribute="leading" constant="12" id="uUt-4b-MpF"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="bBl-xM-DcV"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="jMX-WB-8Vo" id="Lvs-CX-WOs"/>
+                        <outlet property="titleLabel" destination="ESS-zB-RoN" id="gcI-9r-zt8"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="CSd-2F-7q5" customClass="TestDriveBookingCompleted" customModule="SiriIntentExtensionUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-cY-oUV">
+                            <rect key="frame" x="12" y="12" width="216" height="104"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-ig-zK3">
+                                    <rect key="frame" x="0.0" y="0.0" width="216" height="41.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sB6-YK-SIM">
+                                    <rect key="frame" x="0.0" y="41.5" width="216" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-8X-H0B">
+                                    <rect key="frame" x="0.0" y="75" width="216" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hrT-qF-qjt" firstAttribute="trailing" secondItem="UoQ-cY-oUV" secondAttribute="trailing" constant="12" id="Rfa-xf-ZA2"/>
+                        <constraint firstItem="UoQ-cY-oUV" firstAttribute="leading" secondItem="hrT-qF-qjt" secondAttribute="leading" constant="12" id="Z60-zA-vWy"/>
+                        <constraint firstAttribute="bottom" secondItem="UoQ-cY-oUV" secondAttribute="bottom" constant="12" id="ZZe-gq-t7p"/>
+                        <constraint firstItem="UoQ-cY-oUV" firstAttribute="top" secondItem="CSd-2F-7q5" secondAttribute="top" constant="12" id="qx2-aX-2jo"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="hrT-qF-qjt"/>
+                    <connections>
+                        <outlet property="completedLabel" destination="fwy-8X-H0B" id="otW-By-BdG"/>
+                        <outlet property="infoLabel" destination="sB6-YK-SIM" id="SxN-3q-PJo"/>
+                        <outlet property="titleLabel" destination="ie9-ig-zK3" id="nnH-HK-iWr"/>
+                    </connections>
+                </view>
             </objects>
         </scene>
     </scenes>

@@ -1,5 +1,5 @@
 //
-//  DonatedShortcutViewController.swift
+//  BookingConfirmationViewController
 //  SiriSuggestionsDemo
 //
 //  Created by Andrei Hogea on 11/07/2018.
@@ -9,13 +9,25 @@
 import UIKit
 import Intents
 
-class DonatedShortcutViewController: UIViewController {
+class BookingConfirmationViewController: UIViewController {
     
+    
+    var testDrive: TestDrive?
+    
+    @IBOutlet weak var confimationLabel: UILabel! {
+        didSet {
+            confimationLabel.numberOfLines = 0
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("shortcut view")
+        if let testDrive = testDrive {
+            confimationLabel.text = "Your booking for a test drive in \(testDrive.car.brand) \(testDrive.car.modelName) is now completed"
+        } else {
+            confimationLabel.text = "Your booking for a test drive is now completed"
+        }
     }
     
 }

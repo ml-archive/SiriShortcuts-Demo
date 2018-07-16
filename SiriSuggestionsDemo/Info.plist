@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Siri Shortcuts Demo</string>
+	<string>Test Drive</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -23,10 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSSiriUsageDescription</key>
-	<string>Siri will help you do shortcuts</string>
+	<string>Siri will help you book your test drive</string>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>TestDriveIntent</string>
 		<string>TestDriveIntent</string>
 		<string>com.nodes.siriSugestions.demo.catalogActivity</string>
 	</array>

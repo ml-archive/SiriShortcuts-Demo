@@ -7,14 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4267FEE420FC8FAE00C7FEBD /* NSUserActivity+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4267FEE320FC8FAE00C7FEBD /* NSUserActivity+Keys.swift */; };
+		42959D2220F7756300101196 /* TestDriveOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D2120F7756300101196 /* TestDriveOverview.swift */; };
+		42959D2320F7766900101196 /* TestDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E520F76421007137CE /* TestDrive.swift */; };
+		42959D2420F7767300101196 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D320F74F24007137CE /* Car.swift */; };
+		42959D2620F776C900101196 /* TestDriveBookingCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D2520F776C900101196 /* TestDriveBookingCompleted.swift */; };
+		42959D2720F777B400101196 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E8320F64DCA0018CA3A /* Intents.intentdefinition */; };
+		42959D2820F777B500101196 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E8320F64DCA0018CA3A /* Intents.intentdefinition */; };
+		42959D2A20F77D2900101196 /* TestDriveIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D2920F77D2900101196 /* TestDriveIntentHandler.swift */; };
+		42959D2B20F77D8A00101196 /* TestDriveIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D2920F77D2900101196 /* TestDriveIntentHandler.swift */; };
+		42959D2C20F77D8B00101196 /* TestDriveIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D2920F77D2900101196 /* TestDriveIntentHandler.swift */; };
+		42959D2D20F77D9000101196 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E320F763DF007137CE /* DataManager.swift */; };
+		42959D2E20F77D9100101196 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E320F763DF007137CE /* DataManager.swift */; };
+		42959D2F20F77E8200101196 /* TestDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E520F76421007137CE /* TestDrive.swift */; };
+		42959D3020F77E8A00101196 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D320F74F24007137CE /* Car.swift */; };
+		42959D3120F77E9500101196 /* TestDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D720F75501007137CE /* TestDriveManager.swift */; };
+		42959D3220F77F0900101196 /* TestDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D720F75501007137CE /* TestDriveManager.swift */; };
+		42959D3520F791E900101196 /* VoiceShortcutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42959D3420F791E900101196 /* VoiceShortcutsManager.swift */; };
 		42D03E4820F632300018CA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E4720F632300018CA3A /* AppDelegate.swift */; };
 		42D03E4A20F632300018CA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E4920F632300018CA3A /* ViewController.swift */; };
 		42D03E4D20F632300018CA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E4B20F632300018CA3A /* Main.storyboard */; };
 		42D03E4F20F632310018CA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E4E20F632310018CA3A /* Assets.xcassets */; };
 		42D03E5220F632310018CA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E5020F632310018CA3A /* LaunchScreen.storyboard */; };
+		42D03E6120F6347E0018CA3A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E6020F6347E0018CA3A /* IntentHandler.swift */; };
+		42D03E6A20F6347E0018CA3A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D03E6920F6347E0018CA3A /* IntentsUI.framework */; };
+		42D03E6D20F6347E0018CA3A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E6C20F6347E0018CA3A /* IntentViewController.swift */; };
+		42D03E7020F6347E0018CA3A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D03E6E20F6347E0018CA3A /* MainInterface.storyboard */; };
+		42D03E7420F6347E0018CA3A /* SiriIntentExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42D03E6720F6347E0018CA3A /* SiriIntentExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42D03E7720F6347E0018CA3A /* SiriIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42D03E5E20F6347D0018CA3A /* SiriIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42D03E8020F643790018CA3A /* BookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E7F20F643790018CA3A /* BookingConfirmationViewController.swift */; };
+		42D03E8420F64DCA0018CA3A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 42D03E8320F64DCA0018CA3A /* Intents.intentdefinition */; };
+		42EEF0D420F74F24007137CE /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D320F74F24007137CE /* Car.swift */; };
+		42EEF0D620F75150007137CE /* NSUserActivity+CatalogActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D520F75150007137CE /* NSUserActivity+CatalogActivity.swift */; };
+		42EEF0D820F75501007137CE /* TestDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D720F75501007137CE /* TestDriveManager.swift */; };
+		42EEF0DA20F756C5007137CE /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0D920F756C5007137CE /* CarCell.swift */; };
+		42EEF0DC20F76036007137CE /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EEF0DB20F76036007137CE /* CarCell.xib */; };
+		42EEF0E420F763DF007137CE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E320F763DF007137CE /* DataManager.swift */; };
+		42EEF0E620F76421007137CE /* TestDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF0E520F76421007137CE /* TestDrive.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		42D03E7220F6347E0018CA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D03E3C20F632300018CA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D03E6620F6347E0018CA3A;
+			remoteInfo = SiriIntentExtensionUI;
+		};
+		42D03E7520F6347E0018CA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D03E3C20F632300018CA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D03E5D20F6347D0018CA3A;
+			remoteInfo = SiriIntentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42D03E7E20F6347E0018CA3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42D03E7420F6347E0018CA3A /* SiriIntentExtensionUI.appex in Embed App Extensions */,
+				42D03E7720F6347E0018CA3A /* SiriIntentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4267FEE320FC8FAE00C7FEBD /* NSUserActivity+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+Keys.swift"; sourceTree = "<group>"; };
+		42959D2120F7756300101196 /* TestDriveOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveOverview.swift; sourceTree = "<group>"; };
+		42959D2520F776C900101196 /* TestDriveBookingCompleted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveBookingCompleted.swift; sourceTree = "<group>"; };
+		42959D2920F77D2900101196 /* TestDriveIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveIntentHandler.swift; sourceTree = "<group>"; };
+		42959D3420F791E900101196 /* VoiceShortcutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceShortcutsManager.swift; sourceTree = "<group>"; };
 		42D03E4420F632300018CA3A /* SiriSuggestionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriSuggestionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D03E4720F632300018CA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D03E4920F632300018CA3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +91,24 @@
 		42D03E4E20F632310018CA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D03E5120F632310018CA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D03E5320F632310018CA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D03E5920F633900018CA3A /* SiriSuggestionsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriSuggestionsDemo.entitlements; sourceTree = "<group>"; };
+		42D03E5E20F6347D0018CA3A /* SiriIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D03E6020F6347E0018CA3A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		42D03E6220F6347E0018CA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D03E6720F6347E0018CA3A /* SiriIntentExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D03E6920F6347E0018CA3A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		42D03E6C20F6347E0018CA3A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		42D03E6F20F6347E0018CA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		42D03E7120F6347E0018CA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D03E7F20F643790018CA3A /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
+		42D03E8320F64DCA0018CA3A /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		42EEF0D320F74F24007137CE /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		42EEF0D520F75150007137CE /* NSUserActivity+CatalogActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+CatalogActivity.swift"; sourceTree = "<group>"; };
+		42EEF0D720F75501007137CE /* TestDriveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveManager.swift; sourceTree = "<group>"; };
+		42EEF0D920F756C5007137CE /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		42EEF0DB20F76036007137CE /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		42EEF0E320F763DF007137CE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		42EEF0E520F76421007137CE /* TestDrive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,13 +119,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42D03E5B20F6347D0018CA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D03E6420F6347E0018CA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D03E6A20F6347E0018CA3A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42959D3320F78E6A00101196 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				42EEF0D720F75501007137CE /* TestDriveManager.swift */,
+				42EEF0E320F763DF007137CE /* DataManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		42D03E3B20F632300018CA3A = {
 			isa = PBXGroup;
 			children = (
 				42D03E4620F632300018CA3A /* SiriSuggestionsDemo */,
+				42D03E5F20F6347E0018CA3A /* SiriIntentExtension */,
+				42D03E6B20F6347E0018CA3A /* SiriIntentExtensionUI */,
+				42D03E6820F6347E0018CA3A /* Frameworks */,
 				42D03E4520F632300018CA3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				42D03E4420F632300018CA3A /* SiriSuggestionsDemo.app */,
+				42D03E5E20F6347D0018CA3A /* SiriIntentExtension.appex */,
+				42D03E6720F6347E0018CA3A /* SiriIntentExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +170,103 @@
 		42D03E4620F632300018CA3A /* SiriSuggestionsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				42D03E4720F632300018CA3A /* AppDelegate.swift */,
-				42D03E4920F632300018CA3A /* ViewController.swift */,
-				42D03E4B20F632300018CA3A /* Main.storyboard */,
-				42D03E4E20F632310018CA3A /* Assets.xcassets */,
-				42D03E5020F632310018CA3A /* LaunchScreen.storyboard */,
+				42D03E5920F633900018CA3A /* SiriSuggestionsDemo.entitlements */,
 				42D03E5320F632310018CA3A /* Info.plist */,
+				42D03E4720F632300018CA3A /* AppDelegate.swift */,
+				42EEF0E220F76339007137CE /* Extensions */,
+				42EEF0E120F76330007137CE /* View Controllers */,
+				42D03E8320F64DCA0018CA3A /* Intents.intentdefinition */,
+				42959D3320F78E6A00101196 /* Shared */,
+				42EEF0DF20F76301007137CE /* Storyboard */,
+				42EEF0DE20F762F3007137CE /* Models */,
+				42EEF0DD20F7613C007137CE /* Cell */,
+				42EEF0E020F76314007137CE /* Misc */,
+				42959D2920F77D2900101196 /* TestDriveIntentHandler.swift */,
+				42959D3420F791E900101196 /* VoiceShortcutsManager.swift */,
 			);
 			path = SiriSuggestionsDemo;
+			sourceTree = "<group>";
+		};
+		42D03E5F20F6347E0018CA3A /* SiriIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E6020F6347E0018CA3A /* IntentHandler.swift */,
+				42D03E6220F6347E0018CA3A /* Info.plist */,
+			);
+			path = SiriIntentExtension;
+			sourceTree = "<group>";
+		};
+		42D03E6820F6347E0018CA3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E6920F6347E0018CA3A /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42D03E6B20F6347E0018CA3A /* SiriIntentExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E6C20F6347E0018CA3A /* IntentViewController.swift */,
+				42D03E6E20F6347E0018CA3A /* MainInterface.storyboard */,
+				42959D2120F7756300101196 /* TestDriveOverview.swift */,
+				42959D2520F776C900101196 /* TestDriveBookingCompleted.swift */,
+				42D03E7120F6347E0018CA3A /* Info.plist */,
+			);
+			path = SiriIntentExtensionUI;
+			sourceTree = "<group>";
+		};
+		42EEF0DD20F7613C007137CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				42EEF0D920F756C5007137CE /* CarCell.swift */,
+				42EEF0DB20F76036007137CE /* CarCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		42EEF0DE20F762F3007137CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42EEF0D320F74F24007137CE /* Car.swift */,
+				42EEF0E520F76421007137CE /* TestDrive.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42EEF0DF20F76301007137CE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E4B20F632300018CA3A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		42EEF0E020F76314007137CE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E4E20F632310018CA3A /* Assets.xcassets */,
+				42D03E5020F632310018CA3A /* LaunchScreen.storyboard */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		42EEF0E120F76330007137CE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42D03E4920F632300018CA3A /* ViewController.swift */,
+				42D03E7F20F643790018CA3A /* BookingConfirmationViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		42EEF0E220F76339007137CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42EEF0D520F75150007137CE /* NSUserActivity+CatalogActivity.swift */,
+				4267FEE320FC8FAE00C7FEBD /* NSUserActivity+Keys.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +279,52 @@
 				42D03E4020F632300018CA3A /* Sources */,
 				42D03E4120F632300018CA3A /* Frameworks */,
 				42D03E4220F632300018CA3A /* Resources */,
+				42D03E7E20F6347E0018CA3A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				42D03E7320F6347E0018CA3A /* PBXTargetDependency */,
+				42D03E7620F6347E0018CA3A /* PBXTargetDependency */,
 			);
 			name = SiriSuggestionsDemo;
 			productName = SiriSuggestionsDemo;
 			productReference = 42D03E4420F632300018CA3A /* SiriSuggestionsDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		42D03E5D20F6347D0018CA3A /* SiriIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D03E7B20F6347E0018CA3A /* Build configuration list for PBXNativeTarget "SiriIntentExtension" */;
+			buildPhases = (
+				42D03E5A20F6347D0018CA3A /* Sources */,
+				42D03E5B20F6347D0018CA3A /* Frameworks */,
+				42D03E5C20F6347D0018CA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentExtension;
+			productName = SiriIntentExtension;
+			productReference = 42D03E5E20F6347D0018CA3A /* SiriIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		42D03E6620F6347E0018CA3A /* SiriIntentExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D03E7820F6347E0018CA3A /* Build configuration list for PBXNativeTarget "SiriIntentExtensionUI" */;
+			buildPhases = (
+				42D03E6320F6347E0018CA3A /* Sources */,
+				42D03E6420F6347E0018CA3A /* Frameworks */,
+				42D03E6520F6347E0018CA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentExtensionUI;
+			productName = SiriIntentExtensionUI;
+			productReference = 42D03E6720F6347E0018CA3A /* SiriIntentExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +337,17 @@
 				ORGANIZATIONNAME = "Andrei Hogea";
 				TargetAttributes = {
 					42D03E4320F632300018CA3A = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					42D03E5D20F6347D0018CA3A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					42D03E6620F6347E0018CA3A = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -113,6 +366,8 @@
 			projectRoot = "";
 			targets = (
 				42D03E4320F632300018CA3A /* SiriSuggestionsDemo */,
+				42D03E5D20F6347D0018CA3A /* SiriIntentExtension */,
+				42D03E6620F6347E0018CA3A /* SiriIntentExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +379,23 @@
 			files = (
 				42D03E5220F632310018CA3A /* LaunchScreen.storyboard in Resources */,
 				42D03E4F20F632310018CA3A /* Assets.xcassets in Resources */,
+				42EEF0DC20F76036007137CE /* CarCell.xib in Resources */,
 				42D03E4D20F632300018CA3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D03E5C20F6347D0018CA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D03E6520F6347E0018CA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D03E7020F6347E0018CA3A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +406,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EEF0D820F75501007137CE /* TestDriveManager.swift in Sources */,
+				42D03E8020F643790018CA3A /* BookingConfirmationViewController.swift in Sources */,
+				42959D3520F791E900101196 /* VoiceShortcutsManager.swift in Sources */,
 				42D03E4A20F632300018CA3A /* ViewController.swift in Sources */,
+				42EEF0D420F74F24007137CE /* Car.swift in Sources */,
+				42EEF0D620F75150007137CE /* NSUserActivity+CatalogActivity.swift in Sources */,
+				42959D2A20F77D2900101196 /* TestDriveIntentHandler.swift in Sources */,
+				42D03E8420F64DCA0018CA3A /* Intents.intentdefinition in Sources */,
+				42EEF0DA20F756C5007137CE /* CarCell.swift in Sources */,
+				42EEF0E420F763DF007137CE /* DataManager.swift in Sources */,
+				4267FEE420FC8FAE00C7FEBD /* NSUserActivity+Keys.swift in Sources */,
+				42EEF0E620F76421007137CE /* TestDrive.swift in Sources */,
 				42D03E4820F632300018CA3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42D03E5A20F6347D0018CA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42959D3120F77E9500101196 /* TestDriveManager.swift in Sources */,
+				42959D2B20F77D8A00101196 /* TestDriveIntentHandler.swift in Sources */,
+				42959D2D20F77D9000101196 /* DataManager.swift in Sources */,
+				42959D3020F77E8A00101196 /* Car.swift in Sources */,
+				42959D2720F777B400101196 /* Intents.intentdefinition in Sources */,
+				42959D2F20F77E8200101196 /* TestDrive.swift in Sources */,
+				42D03E6120F6347E0018CA3A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D03E6320F6347E0018CA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42959D2820F777B500101196 /* Intents.intentdefinition in Sources */,
+				42959D3220F77F0900101196 /* TestDriveManager.swift in Sources */,
+				42959D2E20F77D9100101196 /* DataManager.swift in Sources */,
+				42D03E6D20F6347E0018CA3A /* IntentViewController.swift in Sources */,
+				42959D2C20F77D8B00101196 /* TestDriveIntentHandler.swift in Sources */,
+				42959D2320F7766900101196 /* TestDrive.swift in Sources */,
+				42959D2420F7767300101196 /* Car.swift in Sources */,
+				42959D2620F776C900101196 /* TestDriveBookingCompleted.swift in Sources */,
+				42959D2220F7756300101196 /* TestDriveOverview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42D03E7320F6347E0018CA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D03E6620F6347E0018CA3A /* SiriIntentExtensionUI */;
+			targetProxy = 42D03E7220F6347E0018CA3A /* PBXContainerItemProxy */;
+		};
+		42D03E7620F6347E0018CA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D03E5D20F6347D0018CA3A /* SiriIntentExtension */;
+			targetProxy = 42D03E7520F6347E0018CA3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42D03E4B20F632300018CA3A /* Main.storyboard */ = {
@@ -157,6 +482,14 @@
 				42D03E5120F632310018CA3A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42D03E6E20F6347E0018CA3A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D03E6F20F6347E0018CA3A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,14 +612,17 @@
 		42D03E5720F632310018CA3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriSuggestionsDemo/SiriSuggestionsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
 				INFOPLIST_FILE = SiriSuggestionsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Nodes-ApS.SiriSuggestionsDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,15 +632,94 @@
 		42D03E5820F632310018CA3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriSuggestionsDemo/SiriSuggestionsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
 				INFOPLIST_FILE = SiriSuggestionsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Nodes-ApS.SiriSuggestionsDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42D03E7920F6347E0018CA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
+				INFOPLIST_FILE = SiriIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo.SiriIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42D03E7A20F6347E0018CA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
+				INFOPLIST_FILE = SiriIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo.SiriIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42D03E7C20F6347E0018CA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
+				INFOPLIST_FILE = SiriIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo.SiriIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42D03E7D20F6347E0018CA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M92A6H7EPZ;
+				INFOPLIST_FILE = SiriIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.siriSugestions.demo.SiriIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,6 +742,24 @@
 			buildConfigurations = (
 				42D03E5720F632310018CA3A /* Debug */,
 				42D03E5820F632310018CA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D03E7820F6347E0018CA3A /* Build configuration list for PBXNativeTarget "SiriIntentExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D03E7920F6347E0018CA3A /* Debug */,
+				42D03E7A20F6347E0018CA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D03E7B20F6347E0018CA3A /* Build configuration list for PBXNativeTarget "SiriIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D03E7C20F6347E0018CA3A /* Debug */,
+				42D03E7D20F6347E0018CA3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

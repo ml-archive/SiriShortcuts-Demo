@@ -28,7 +28,8 @@ class TestDriveManager {
         }
     }
     
-    func bookTestDrive(_ car: Car, duration: Int) {
+    @discardableResult
+    func bookTestDrive(_ car: Car, duration: Int) -> TestDrive {
         //Create TestDrive instance from booking data
         let testDrive = TestDrive(car: car, duration: duration)
         
@@ -36,7 +37,8 @@ class TestDriveManager {
         
         // Donate an interaction to the system.
         donateInteraction(for: testDrive)
-
+        
+        return testDrive
     }
     
 }

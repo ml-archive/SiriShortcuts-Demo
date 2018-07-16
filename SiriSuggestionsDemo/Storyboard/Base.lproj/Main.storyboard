@@ -40,16 +40,33 @@
             </objects>
             <point key="canvasLocation" x="975.20000000000005" y="658.92053973013503"/>
         </scene>
-        <!--Donated Shortcut View Controller-->
+        <!--Booking Confirmation View Controller-->
         <scene sceneID="1Pr-yX-AdJ">
             <objects>
-                <viewController storyboardIdentifier="DonatedShortcutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hbi-pz-qjR" customClass="DonatedShortcutViewController" customModule="SiriSuggestionsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookingConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hbi-pz-qjR" customClass="BookingConfirmationViewController" customModule="SiriSuggestionsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PX7-tc-F2p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0I-ll-zm7">
+                                <rect key="frame" x="12" y="331.5" width="351" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T0I-ll-zm7" firstAttribute="centerY" secondItem="xv4-mw-84s" secondAttribute="centerY" id="8Nk-DN-sMw"/>
+                            <constraint firstItem="T0I-ll-zm7" firstAttribute="centerX" secondItem="xv4-mw-84s" secondAttribute="centerX" id="BBc-6t-Vvd"/>
+                            <constraint firstItem="xv4-mw-84s" firstAttribute="trailing" secondItem="T0I-ll-zm7" secondAttribute="trailing" constant="12" id="Ref-Vy-GDE"/>
+                            <constraint firstItem="T0I-ll-zm7" firstAttribute="leading" secondItem="xv4-mw-84s" secondAttribute="leading" constant="12" id="lGp-km-Fhh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xv4-mw-84s"/>
                     </view>
+                    <connections>
+                        <outlet property="confimationLabel" destination="T0I-ll-zm7" id="F16-TF-a7H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3c-5B-vOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
